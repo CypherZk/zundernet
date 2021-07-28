@@ -10,22 +10,11 @@ sudo apt install python3 -y && sudo apt install python3-pip -y && pip3 install p
 
 ### download and install pirate-cli
 
-Download the pirate-cli tool [here](https://github.com/PirateNetwork/pirate/releases/tag/v5.2.0)
-Or using wget by CLI
-```
-wget https://github.com/PirateNetwork/pirate/archive/refs/tags/v5.2.0.tar.gz
-tar -xvzf v5.2.0.tar.gz
-cd pirate-v5.2.0
+Download the pirate-cli [here](https://github.com/PirateNetwork/pirate/releases/tag/v5.2.0)
 
-#here the script will exit doing nothing if already installed
-./zcutil/fetch-params.sh
+Unzip it somewhere and **keep it's path in mind** (useful later)
 
-# -j8 = using 8 threads for the compilation - replace 8 with number of threads you want to use; -j$(nproc) for all threads available
-# this step might take some time
-./zcutil/build.sh -j8
-```
-
-### clone the repo
+### clone zundernet repo
 
 ```
  cd ~ && git clone https://github.com/buidl1/zundernet.git
